@@ -8,7 +8,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Pisyek\\JobAdsCli\\": "src/"
+            "JobAds\\": "src/"
         }
     },
     "authors": [
