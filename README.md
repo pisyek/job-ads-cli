@@ -1,0 +1,3 @@
+# job-ads-cli
+
+A small command-line app that lists, filters and summarises job ads.
