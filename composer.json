@@ -1,0 +1,49 @@
+{
+    "name": "pisyek/job-ads-cli",
+    "description": "List, filter and summarise job ads from the command line",
+    "type": "project",
+    "require": {
+        "php": "^8.5"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.32",
+        "pestphp/pest": "^5.3",
+        "phpstan/phpstan": "^2.3",
+        "phpunit/phpunit": "^13.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "JobAds\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JobAds\\Tests\\": "tests/",
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "pisyek",
+            "email": "pisyek@gmail.com"
+        }
+    ],
+    "scripts": {
+        "test": "pest",
+        "lint": "pint --test",
+        "format": "pint",
+        "analyse": "phpstan analyse --no-progress",
+        "check": [
+            "@lint",
+            "@analyse",
+            "@test"
+        ]
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
