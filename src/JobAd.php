@@ -50,7 +50,7 @@ final readonly class JobAd
             location: $data['location'],
             salaryMin: $data['salary_min'],
             salaryMax: $data['salary_max'],
-            skills: array_map(strtolower(...), $data['skills']),
+            skills: array_values(array_map(strtolower(...), $data['skills'])),
         );
     }
 
